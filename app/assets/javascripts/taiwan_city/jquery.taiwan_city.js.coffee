@@ -12,4 +12,4 @@
 
   $(document).on 'turbolinks:load', ->
     $('.city-group').taiwan_city()
-)(jQuery)
+)(Zepto)
