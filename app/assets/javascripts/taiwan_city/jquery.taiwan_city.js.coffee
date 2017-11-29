@@ -10,6 +10,6 @@
           $.get "/taiwan_city/#{$(@).val()}", (data) ->
             next_selects.first()[0].options.add(new Option(option[0], option[1])) for option in data
 
-  $(document).on 'turbolinks:load', ->
+  $(document).on 'ready', ->
     $('.city-group').taiwan_city()
 )(Zepto)
